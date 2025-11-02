@@ -1,16 +1,14 @@
 using UnityEngine;
 
-public class CarMovement : MonoBehaviour
+public class CarMovementSimple : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [Header("Configurações de movimento")]
+    public float speed = 5f;          // velocidade do carro
+    public bool moveRight = true;     // define a direção: true = direita, false = esquerda
 
-    // Update is called once per frame
     void Update()
     {
-        
+        float direction = moveRight ? 1f : -1f;
+        transform.Translate(Vector3.right * direction * speed * Time.deltaTime);
     }
 }
