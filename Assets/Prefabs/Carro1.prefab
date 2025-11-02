@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1904824306723210432}
   m_Layer: 0
   m_Name: Carro1
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.3, y: 0.57, z: 0.01619}
-  m_LocalScale: {x: 1.44, y: 1.14, z: 3.73}
+  m_LocalScale: {x: 3.55, y: 1.14, z: 1.44}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
