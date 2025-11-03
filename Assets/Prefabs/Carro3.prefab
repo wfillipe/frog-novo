@@ -1,5 +1,71 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &401072484842371023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2813859633732554054}
+  - component: {fileID: 1831923703928522272}
+  - component: {fileID: 6011204075617498616}
+  m_Layer: 0
+  m_Name: CarTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2813859633732554054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401072484842371023}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.058, y: 0.836, z: 0.05}
+  m_LocalScale: {x: 0.28169012, y: 0.877193, z: 0.69444436}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8449118061825410537}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1831923703928522272
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401072484842371023}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.509068, y: 0.23331594, z: 1.4543809}
+  m_Center: {x: 0.21523228, y: -0.38334203, z: -0.058668174}
+--- !u!114 &6011204075617498616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401072484842371023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0c72e95c170dae45a8336f938b9e737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarStickFixed
 --- !u!1 &7513145392609276465
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,7 +80,6 @@ GameObject:
   - component: {fileID: 1904824306723210432}
   - component: {fileID: 1540813758672757048}
   - component: {fileID: 2016377103840215046}
-  - component: {fileID: 8267636945587411829}
   m_Layer: 0
   m_Name: Carro3
   m_TagString: Car
@@ -34,7 +99,8 @@ Transform:
   m_LocalPosition: {x: -2.3, y: 0.57, z: 0.01619}
   m_LocalScale: {x: 3.55, y: 1.14, z: 1.44}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2813859633732554054}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7823772828553015158
@@ -105,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679a669793075cc4182e6772d63755f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed: 1
+  speed: 5
   moveRight: 0
 --- !u!65 &1540813758672757048
 BoxCollider:
@@ -143,21 +209,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.99999994, y: 0.09637449, z: 0.99999994}
-  m_Center: {x: 0, y: 0.58368886, z: 0}
---- !u!114 &8267636945587411829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7513145392609276465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0c72e95c170dae45a8336f938b9e737, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_Center: {x: 0, y: 0.29, z: 0}
